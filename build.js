@@ -32,7 +32,7 @@
         ul.appendChild(a);
         
         // document.getElementById("list").innerHTML = (li);
-        div.setAttribute("class" , dataList[i].name);
+        div.setAttribute("att" , dataList[i].name);
         h3.textContent = dataList[i].name;
         li.textContent = ` das Geburtsjahr :  ${dataList[i].birth_year} `
         li.style.listStyle = "none";
