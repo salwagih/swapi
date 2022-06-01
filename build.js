@@ -1,4 +1,30 @@
-   // let img = document.createElement()
+   fetch("https://swapi.dev/api/people/")
+.then((response) => response.json())
+.then((response) => {
+    let dataList = response.results;
+    // console.log(dataList);
+   
+    // document.querySelector = ("sarch-bar").addEventListener("input" , filterList)
+    
+    for(i=0;i<dataList.length;i++){
+        const main = document.querySelector("#my_div");
+        const div = document.createElement("div");
+        const h3 = document.createElement("h3");
+        const ul = document.createElement("ul");
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+
+        // const output = document.querySelector(".output");
+        // const search = document.querySelector("search-input");
+    
+    //    function filter(e) {
+    //    let char = '';
+    //    const outputChar  = response.filter(dataList[i]=> dataList[i].toLowerCase().includes(e.target.value.toLowerCase()))
+
+    //    console.log(outputChar);
+
+        
+        // let img = document.createElement()
         main.appendChild(div);
         div.appendChild(h3);
         div.appendChild(ul)
@@ -13,7 +39,7 @@
         a.innerHTML = "Filme";
         a.href = dataList[i].films[0];
         // how to get species?why code isn't working?(zugriff auf die Datei nicht möglich)
-        main.style.backgroundImage = "url('https://cdn.eso.org/images/screen/eso1132e.jpg')";
+        main.style.backgroundImage = "url('https://static.wikia.nocookie.net/starwars/images/c/cc/Star-wars-logo-new-tall.jpg/revision/latest?cb=20190313021755')";
         a.style.textDecoration = " none";
         div.style.margin ="2vh"
         h3.style.color = "white"
@@ -47,3 +73,4 @@ console.log(list);
 
 
  );
+
