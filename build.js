@@ -17,7 +17,7 @@
         // const output = document.querySelector(".output");
         // const search = document.querySelector("search-input");
     
-    //    function filter(e) {
+    //    function filter() {
     //    let char = '';
     //    const outputChar  = response.filter(dataList[i]=> dataList[i].toLowerCase().includes(e.target.value.toLowerCase()))
 
