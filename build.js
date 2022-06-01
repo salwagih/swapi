@@ -52,7 +52,7 @@
 
     // htmlString = charactersList.map (person => 
     //     return
-    //  code the other day gave an error output (.map is not a function)
+    //  code gave an error output (.map is not a function)
     
 
 
